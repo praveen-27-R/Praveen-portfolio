@@ -67,8 +67,8 @@ export const certificates = [
   issuer: 'GUVI | HCL | Google for Education',
   credential: 'Completed',
   date: 'July 11, 2026',
-  image: '/images/certificates/google-ai-studio-multilingual-speech.png', // Update with your image path
-  link: 'https://www.guvi.in/verify-certificate?id=zL8u285164W70P78h3',
+  image: null, // Update with your image path
+  link: '#',
 }
 ]
 
