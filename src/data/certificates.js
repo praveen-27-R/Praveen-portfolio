@@ -67,7 +67,7 @@ export const certificates = [
   issuer: 'GUVI | HCL | Google for Education',
   credential: 'Completed',
   date: 'July 11, 2026',
-  image: null, // Update with your image path
+  image: ./HCL.png, // Update with your image path
   link: '#',
 }
 ]
