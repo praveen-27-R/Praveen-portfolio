@@ -61,6 +61,15 @@ export const certificates = [
     image: null,
     link: '#',
   },
+  {
+  id: 'google-ai-studio-multilingual-speech',
+  title: 'Build & Deploy AI Apps with Google AI Studio: Multilingual AI Speech App Development',
+  issuer: 'GUVI | HCL | Google for Education',
+  credential: 'Completed',
+  date: 'July 11, 2026',
+  image: '/images/certificates/google-ai-studio-multilingual-speech.png', // Update with your image path
+  link: 'https://www.guvi.in/verify-certificate?id=zL8u285164W70P78h3',
+}
 ]
 
 export default certificates
