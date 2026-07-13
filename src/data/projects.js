@@ -166,8 +166,8 @@ export const projects = [
     'Real-time translation into English.',
     'Live transcript generation of spoken content.',
     'Natural AI voice playback of translated text.',
-    'Certificate of Completion from GUVI × HCL for successfully building and deploying the application.'
-    'https://ai-live-translator.ai.studio'
+    'Certificate of Completion from GUVI × HCL for successfully building and deploying the application.',
+    'https://ai-live-translator.ai.studio',
   ],
 
   timeline: 'July 2026',
