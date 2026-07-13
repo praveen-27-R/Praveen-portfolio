@@ -141,7 +141,7 @@ export const projects = [
   },
   
   {
-  id: 'ai-speech-translator',
+  id: 'modern-ece-portfolio',
 
   title: 'AI Multilingual Speech Translator',
 
