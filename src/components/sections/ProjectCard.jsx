@@ -60,7 +60,7 @@ function ProjectIllustration({ id }) {
     )
   }
 
-  if (id === 'medtech-digital-partner' || id === 'modern-ece-portfolio') {
+  if (id === 'medtech-digital-partner' || id === 'modern-ece-portfolio' || id === 'ai-speech-translator') {
     return (
       <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         <div className="absolute top-3 left-4 border border-white/[0.08] rounded px-2 py-0.5 text-[8px] font-mono tracking-wider text-grey/40 uppercase bg-white/[0.02]">
