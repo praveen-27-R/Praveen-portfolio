@@ -1,11 +1,13 @@
 import GlassCard from '../ui/GlassCard.jsx'
 
-function ProjectIllustration({ id }) {
+function ProjectIllustration({ project }) {
+  const { id, category } = project
+
   if (id === 'digital-alarm-clock') {
     return (
       <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         <div className="absolute top-3 left-4 border border-white/[0.08] rounded px-2 py-0.5 text-[8px] font-mono tracking-wider text-grey/40 uppercase bg-white/[0.02]">
-          VLSI & Digital Systems
+          {category}
         </div>
         <div className="font-mono text-[28px] font-bold text-[#FFD700] tracking-widest mt-3 drop-shadow-[0_0_12px_rgba(255,215,0,0.3)]">
           12:00<span className="text-xs align-super font-semibold text-[#FFD700]/70 ml-0.5">00</span>
@@ -21,7 +23,7 @@ function ProjectIllustration({ id }) {
     return (
       <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         <div className="absolute top-3 left-4 border border-white/[0.08] rounded px-2 py-0.5 text-[8px] font-mono tracking-wider text-grey/40 uppercase bg-white/[0.02]">
-          Embedded Systems
+          {category}
         </div>
         <div className="flex items-center gap-3 mt-4">
           <svg className="w-10 h-10 text-[#FFD700]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -44,7 +46,7 @@ function ProjectIllustration({ id }) {
     return (
       <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         <div className="absolute top-3 left-4 border border-white/[0.08] rounded px-2 py-0.5 text-[8px] font-mono tracking-wider text-grey/40 uppercase bg-white/[0.02]">
-          System Design
+          {category}
         </div>
         <div className="relative w-28 h-20 mt-4 flex items-center justify-center">
           <svg className="w-full h-full text-[#FFD700]/25" viewBox="0 0 120 80" fill="none" stroke="currentColor" strokeWidth="1">
@@ -60,11 +62,16 @@ function ProjectIllustration({ id }) {
     )
   }
 
-  if (id === 'medtech-digital-partner' || id === 'modern-ece-portfolio' || id === 'ai-speech-translator') {
+  if (
+    id === 'medtech-digital-partner' ||
+    id === 'modern-ece-portfolio' ||
+    id === 'ai-speech-translator' ||
+    id === 'full-stack-development'
+  ) {
     return (
       <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         <div className="absolute top-3 left-4 border border-white/[0.08] rounded px-2 py-0.5 text-[8px] font-mono tracking-wider text-grey/40 uppercase bg-white/[0.02]">
-          Web Development
+          {category}
         </div>
         <div className="w-[70%] h-[55%] border border-white/[0.08] rounded-xl bg-[#121212] mt-4 flex flex-col p-2.5 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
           <div className="flex gap-1 mb-2">
@@ -114,7 +121,7 @@ export default function ProjectCard({ project, onOpen }) {
                 {project.image && project.image !== '#' ? (
           <img src={project.image} alt={project.title} className="h-full w-full rounded-2xl object-cover" />
         ) : (
-          <ProjectIllustration id={project.id} />
+          <ProjectIllustration project={project} />
         )}
       </div>
 

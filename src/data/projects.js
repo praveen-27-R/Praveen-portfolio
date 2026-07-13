@@ -120,7 +120,7 @@ export const projects = [
   },
 
   {
-    id: 'modern-ece-portfolio',
+    id: 'full-stack-development',
     title: 'FULL STACK DEVELOPMENT',
     category: 'FULL STACK DEVELOPMENTt',
     tools: ['React', 'Tailwind CSS', 'Django', 'Github'],
@@ -173,7 +173,7 @@ export const projects = [
   timeline: 'July 2026',
   github: '#',
   liveDemo: '#',
-   image: '#',
+  image: null,
 
   gallery: [],
 },
