@@ -139,6 +139,44 @@ export const projects = [
     image: null,
     gallery: [],
   },
+  
+  {
+  id: 'ai-speech-translator',
+
+  title: 'AI Multilingual Speech Translator',
+
+  category: 'Artificial Intelligence & Web Development',
+
+  tools: [
+    'Google AI Studio',
+    'Gemini AI',
+    'JavaScript',
+    'React',
+    'HTML5',
+    'CSS3',
+    'Web Speech API'
+  ],
+
+  description:
+    'Developed an AI-powered multilingual speech translation web application capable of recognizing spoken input in multiple languages, automatically detecting the source language, translating it into English in real time, generating an accurate transcript, and delivering the translated content through natural AI voice synthesis. The application provides a seamless communication experience with an intuitive user interface, making language barriers easier to overcome.',
+
+  features: [
+    
+    'AI-powered automatic language detection.',
+    'Real-time translation into English.',
+    'Live transcript generation of spoken content.',
+    'Natural AI voice playback of translated text.',
+    'Certificate of Completion from GUVI × HCL for successfully building and deploying the application.'
+    'https://ai-live-translator.ai.studio'
+  ],
+
+  timeline: 'July 2026',
+  github: '#',
+  liveDemo: '#',
+   image: '#',
+
+  gallery: [],
+},
 ]
 
 export default projects
