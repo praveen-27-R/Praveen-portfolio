@@ -111,7 +111,7 @@ export default function ProjectCard({ project, onOpen }) {
       className="group relative cursor-pointer overflow-hidden p-7 h-full flex flex-col"
     >
       <div className="mb-5 flex h-40 items-center justify-center rounded-2xl border border-white/[0.08] bg-white/[0.03] overflow-hidden text-grey/30">
-        {project.image ? (
+                {project.image && project.image !== '#' ? (
           <img src={project.image} alt={project.title} className="h-full w-full rounded-2xl object-cover" />
         ) : (
           <ProjectIllustration id={project.id} />
