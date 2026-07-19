@@ -14,7 +14,7 @@ export const profile = {
 
   location: 'Tiruchirappalli, Tamil Nadu, India',
   age: null,
-  cgpa: '7.50',
+  cgpa: '7.51',
   status: 'Open to internships & freelance work',
 
   objective:
