@@ -21,7 +21,7 @@ export const education = [
     period: '2023 — 2027',
     degree: 'B.E. Electronics and Communication Engineering',
     institution: 'University College of Engineering (BIT-Campus), Tiruchirappalli',
-    detail: 'CGPA: 7.50',
+    detail: 'CGPA: 7.51',
     type: 'undergraduate',
   },
   {
@@ -29,7 +29,7 @@ export const education = [
     period: 'March 2023',
     degree: 'HSC',
     institution: ' KAP Viswanatham Higher Secondary School, Tiruchirappalli',
-    detail: '86%',
+    detail: '81%',
     type: 'school',
   },
   {
