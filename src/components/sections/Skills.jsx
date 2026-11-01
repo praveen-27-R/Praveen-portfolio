@@ -3,8 +3,24 @@ import SectionHeading from '../ui/SectionHeading.jsx'
 import GlassCard from '../ui/GlassCard.jsx'
 import Reveal from '../ui/Reveal.jsx'
 
-function TechIcon({ logo, name }) {
-  // Custom SVGs for Vercel, SQL, and ECE/Embedded tools
+function TechIcon({ logo, image, name }) {
+  // ── PRIORITY 1: Direct image URL (paste any logo URL in skills.js) ──────────
+  if (image) {
+    return (
+      <img
+        src={image}
+        alt={name}
+        className="w-full h-full object-contain rounded"
+        onError={(e) => {
+          e.target.style.display = 'none'
+          e.target.parentNode.innerHTML = `<span class="text-[10px] font-mono font-bold text-accent">${name.slice(0, 3).toUpperCase()}</span>`
+        }}
+      />
+    )
+  }
+
+  // ── PRIORITY 2: Custom hand-crafted SVGs for tools not in devicon ────────────
+
   if (logo === 'vercel') {
     return (
       <svg viewBox="0 0 24 24" className="w-full h-full fill-white" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +52,7 @@ function TechIcon({ logo, name }) {
       <div className="relative w-full h-full flex items-center justify-center">
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
-          alt="C Language"
+          alt="Embedded C"
           className="w-full h-full"
         />
         <span className="absolute bottom-0 right-0 bg-[#101010] text-accent text-[7px] px-0.5 border border-white/10 rounded font-mono font-bold leading-none scale-[0.8]">
@@ -50,7 +66,6 @@ function TechIcon({ logo, name }) {
     return (
       <svg viewBox="0 0 24 24" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="24" height="24" rx="6" fill="#004B87" />
-        {/* Stylized greek letter mu (µ) for Keil µVision */}
         <path d="M6 18V8h2v7.5c0 0.8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V8h2v5.5c0 0.8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V8h2v6.5c0 2.2-1.8 4-4 4c-1.2 0-2.3-.5-3-1.4c-.7.9-1.8 1.4-3 1.4" fill="none" stroke="#00FFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     )
@@ -60,9 +75,7 @@ function TechIcon({ logo, name }) {
     return (
       <svg viewBox="0 0 24 24" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="12" fill="#005A9C" />
-        {/* Stylized P */}
         <path d="M9 7h4a3 3 0 0 1 0 6H9v4" stroke="#FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        {/* Orbit circle representing simulation */}
         <ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(-30 12 12)" stroke="#00FFC4" strokeWidth="1.2" strokeDasharray="2 2" />
         <circle cx="17.5" cy="8.5" r="1.5" fill="#FFB300" />
       </svg>
@@ -73,7 +86,6 @@ function TechIcon({ logo, name }) {
     return (
       <svg viewBox="0 0 24 24" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="24" height="24" rx="6" fill="#18181B" />
-        {/* Xilinx Butterfly/X Symbol */}
         <g transform="translate(12, 12)">
           <path d="M-6-6 L0-2 L6-6 L3-9 L-3-9 Z" fill="#D32F2F" />
           <path d="M-6 6 L0 2 L6 6 L3 9 L-3 9 Z" fill="#D32F2F" />
@@ -89,9 +101,7 @@ function TechIcon({ logo, name }) {
     return (
       <svg viewBox="0 0 24 24" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="24" height="24" rx="6" fill="#1A1A1A" />
-        {/* Vector's Red Arrowhead/Chevron */}
         <path d="M6 5h4l7 7-7 7H6l7-7-7-7z" fill="#E30613" />
-        {/* Abstract automotive network bus line */}
         <path d="M11 14h7M11 16h7" stroke="#888" strokeWidth="1" strokeLinecap="round" />
         <circle cx="12" cy="14" r="0.8" fill="#00FFC4" />
         <circle cx="16" cy="16" r="0.8" fill="#00FFC4" />
@@ -99,18 +109,21 @@ function TechIcon({ logo, name }) {
     )
   }
 
-  // Fallback map to matching Devicon CDN assets
+  // ── PRIORITY 3: Devicon CDN map ──────────────────────────────────────────────
   const deviconMap = {
-    python: 'python/python-original.svg',
+    c:          'c/c-original.svg',
+    python:     'python/python-original.svg',
     javascript: 'javascript/javascript-original.svg',
-    html5: 'html5/html5-original.svg',
-    css3: 'css3/css3-original.svg',
-    vscode: 'vscode/vscode-original.svg',
-    django: 'django/django-plain.svg',
-    react: 'react/react-original.svg',
-    git: 'git/git-original.svg',
-    github: 'github/github-original.svg',
-    matlab: 'matlab/matlab-original.svg',
+    html5:      'html5/html5-original.svg',
+    css3:       'css3/css3-original.svg',
+    vscode:     'vscode/vscode-original.svg',
+    django:     'django/django-plain.svg',
+    react:      'react/react-original.svg',
+    git:        'git/git-original.svg',
+    github:     'github/github-original.svg',
+    matlab:     'matlab/matlab-original.svg',
+    firebase:   'firebase/firebase-plain.svg',
+    nodered:    'nodered/nodered-original.svg',
   }
 
   const path = deviconMap[logo] || `${logo}/${logo}-original.svg`
@@ -120,7 +133,6 @@ function TechIcon({ logo, name }) {
       alt={name}
       className="w-full h-full object-contain"
       onError={(e) => {
-        // Safe fallback in case of loading error
         e.target.style.display = 'none'
         e.target.parentNode.innerHTML = `<span class="text-[10px] font-mono font-bold text-accent">${name.slice(0, 3).toUpperCase()}</span>`
       }}
@@ -154,7 +166,7 @@ export default function Skills() {
                   >
                     {/* Tech Logo */}
                     <div className="w-9 h-9 flex items-center justify-center text-grey/60 group-hover:text-accent group-hover:scale-[1.12] transition-all duration-300">
-                      <TechIcon logo={skill.logo} name={skill.name} />
+                      <TechIcon logo={skill.logo} image={skill.image} name={skill.name} />
                     </div>
 
                     {/* Tech Name */}

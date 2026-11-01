@@ -26,7 +26,7 @@ export const profile = {
   ],
 
   stats: [
-    { label: 'CGPA', value: '7.50' },
+    { label: 'CGPA', value: '7.51' },
     { label: 'Projects built', value: '5' },
     { label: 'Internships', value: '3' },
     { label: 'Certificates', value: '5' },

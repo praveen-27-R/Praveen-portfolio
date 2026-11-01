@@ -3,6 +3,52 @@ import GlassCard from '../ui/GlassCard.jsx'
 function ProjectIllustration({ project }) {
   const { id, category } = project
 
+  if (id === 'cloud-integrated-firebase-iot-dashboard') {
+    return (
+      <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
+        <div className="absolute top-3 left-4 border border-white/[0.08] rounded px-2 py-0.5 text-[8px] font-mono tracking-wider text-grey/40 uppercase bg-white/[0.02]">
+          {category}
+        </div>
+        {/* IoT Network Illustration */}
+        <svg className="w-[75%] h-[60%] mt-3 opacity-80" viewBox="0 0 160 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Center cloud node */}
+          <ellipse cx="80" cy="44" rx="16" ry="10" stroke="#FFD700" strokeWidth="1.2" strokeDasharray="3 2" />
+          <text x="80" y="47" textAnchor="middle" fill="#FFD700" fontSize="5.5" fontFamily="monospace" fontWeight="bold">CLOUD</text>
+
+          {/* ESP32 chip - left */}
+          <rect x="12" y="38" width="22" height="13" rx="2" stroke="#FFD700" strokeWidth="1" fill="#FFD700" fillOpacity="0.05" />
+          <text x="23" y="46" textAnchor="middle" fill="#FFD700" fontSize="4.5" fontFamily="monospace" fontWeight="bold">ESP32</text>
+
+          {/* MQTT broker - top */}
+          <rect x="63" y="8" width="24" height="12" rx="2" stroke="#FFD700" strokeWidth="1" fill="#FFD700" fillOpacity="0.05" />
+          <text x="75" y="17" textAnchor="middle" fill="#FFD700" fontSize="4.2" fontFamily="monospace">HiveMQ</text>
+
+          {/* Firebase - right */}
+          <rect x="124" y="38" width="24" height="13" rx="2" stroke="#FFD700" strokeWidth="1" fill="#FFD700" fillOpacity="0.05" />
+          <text x="136" y="47" textAnchor="middle" fill="#FFD700" fontSize="4.2" fontFamily="monospace">Firebase</text>
+
+          {/* Node-RED - bottom */}
+          <rect x="62" y="70" width="26" height="12" rx="2" stroke="#FFD700" strokeWidth="1" fill="#FFD700" fillOpacity="0.05" />
+          <text x="75" y="79" textAnchor="middle" fill="#FFD700" fontSize="4.2" fontFamily="monospace">Node-RED</text>
+
+          {/* Connecting lines */}
+          <line x1="34" y1="44" x2="64" y2="44" stroke="#FFD700" strokeWidth="0.8" strokeOpacity="0.4" strokeDasharray="3 2" />
+          <line x1="75" y1="20" x2="75" y2="34" stroke="#FFD700" strokeWidth="0.8" strokeOpacity="0.4" strokeDasharray="3 2" />
+          <line x1="96" y1="44" x2="124" y2="44" stroke="#FFD700" strokeWidth="0.8" strokeOpacity="0.4" strokeDasharray="3 2" />
+          <line x1="80" y1="54" x2="78" y2="70" stroke="#FFD700" strokeWidth="0.8" strokeOpacity="0.4" strokeDasharray="3 2" />
+
+          {/* Sensor dots on ESP32 */}
+          <circle cx="12" cy="38" r="1.5" fill="#FFD700" fillOpacity="0.6" />
+          <circle cx="12" cy="44" r="1.5" fill="#FFD700" fillOpacity="0.6" />
+          <circle cx="12" cy="50" r="1.5" fill="#FFD700" fillOpacity="0.6" />
+
+          {/* Pulse ring animation hint */}
+          <circle cx="80" cy="44" r="22" stroke="#FFD700" strokeWidth="0.5" strokeOpacity="0.15" strokeDasharray="2 3" />
+        </svg>
+      </div>
+    )
+  }
+
   if (id === 'digital-alarm-clock') {
     return (
       <div className="relative w-full h-full bg-[#080808] flex flex-col items-center justify-center overflow-hidden rounded-2xl">

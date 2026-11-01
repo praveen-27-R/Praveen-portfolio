@@ -1,65 +1,68 @@
-// Skills data, categorized for Web Development and Core ECE.
-// Each item maps to its official devicon name or a custom SVG logo.
+// Skills data, categorized for Software Tools and Core ECE Tools.
+// Each item can use:
+//   logo: 'devicon-key'     → loads from devicons CDN automatically
+//   image: 'https://...'   → use ANY direct image URL (PNG, SVG, JPG) for the logo
+//   Both logo and image can be combined; image takes priority if provided.
 /*
-  TEMPLATE FOR ADDING A NEW SKILL / CATEGORY:
+  TEMPLATE FOR ADDING A NEW SKILL:
 
-  A. To add a new skill to an existing category, copy and paste this inside that category's items list:
-     { name: 'Skill Name', logo: 'logo-key' }
-     * Note: 'logo-key' will map to devicons (like 'python', 'react'). 
-       If it is a custom tool (like Keil, Proteus, Vivado, CANoe), its custom SVG is handled in Skills.jsx.
+  Using a Devicon (auto logo):
+    { name: 'React', logo: 'react' }
 
-  B. To add a new skill category, copy and paste this block inside the skillCategories array:
-     {
-       id: 'category-id',
-       name: 'Category Display Name',
-       items: [
-         { name: 'Skill 1', logo: 'logo1' },
-         { name: 'Skill 2', logo: 'logo2' },
-       ],
-     },
+  Using a custom image URL (paste any logo URL you find online):
+    { name: 'Wokwi', image: 'https://avatars.githubusercontent.com/u/73233838' }
+
+  Using both (image overrides logo):
+    { name: 'Firebase', logo: 'firebase', image: 'https://...' }
+
+  TEMPLATE FOR ADDING A NEW CATEGORY:
+    {
+      id: 'category-id',
+      name: 'Category Display Name',
+      items: [
+        { name: 'Skill 1', logo: 'logo1' },
+        { name: 'Skill 2', image: 'https://direct-logo-url.png' },
+      ],
+    },
 */
 
 export const skillCategories = [
   {
-    id: 'web-lang',
-    name: 'Web Dev - Languages',
+    id: 'software-tools',
+    name: 'Software Tools',
     items: [
+      { name: 'C Language', logo: 'c' },
       { name: 'Python', logo: 'python' },
       { name: 'JavaScript', logo: 'javascript' },
       { name: 'HTML5', logo: 'html5' },
       { name: 'CSS3', logo: 'css3' },
       { name: 'SQL', logo: 'sql' },
-    ],
-  },
-  {
-    id: 'web-tools',
-    name: 'Web Dev - Tools',
-    items: [
       { name: 'VS Code', logo: 'vscode' },
       { name: 'Django', logo: 'django' },
       { name: 'React', logo: 'react' },
       { name: 'Git', logo: 'git' },
       { name: 'GitHub', logo: 'github' },
       { name: 'Vercel', logo: 'vercel' },
-    ],
-  },
-  {
-    id: 'core-lang',
-    name: 'Core ECE - Languages',
-    items: [
-      { name: 'Embedded C', logo: 'embeddedc' },
-      { name: 'Verilog HDL', logo: 'verilog' },
+      { name: 'Firebase', image: 'fbb.png' },
     ],
   },
   {
     id: 'core-tools',
-    name: 'Core ECE - Tools',
+    name: 'Core Tools',
     items: [
+      { name: 'Embedded C', logo: 'embeddedc' },
+      { name: 'Verilog HDL', logo: 'verilog' },
       { name: 'MATLAB', logo: 'matlab' },
       { name: 'Keil', logo: 'keil' },
       { name: 'Proteus VSM', logo: 'proteus' },
       { name: 'Xilinx Vivado', logo: 'vivado' },
       { name: 'CANoe', logo: 'canoe' },
+      // --- IoT Tools (using direct image URLs) ---
+      { name: 'Wokwi', image: 'ww.png' },
+      { name: 'ThingSpeak', image: 'tp.jpg' },
+      { name: 'HiveMQ', image: 'hv.png' },
+      { name: 'Node-RED', logo: 'nodered' },
+      { name: 'Firebase', image: 'fbb.png' },
     ],
   },
 ]

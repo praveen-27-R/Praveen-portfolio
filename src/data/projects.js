@@ -26,6 +26,37 @@
 
 export const projects = [
   {
+    id: 'cloud-integrated-firebase-iot-dashboard',
+    title: 'Cloud-Integrated Firebase IoT Dashboard',
+    category: 'Internet of Things (IoT)',
+    tools: [
+      'ESP32',
+      'Wokwi Simulator',
+      'MQTT Protocol',
+      'HiveMQ Cloud',
+      'Node-RED',
+      'ThingSpeak',
+      'Firebase Realtime Database',
+      'Google AI Studio'
+    ],
+    description:
+      'Developed a cloud-integrated smart environmental monitoring and automation platform using ESP32 and multiple sensors. Integrated MQTT communication, Node-RED, ThingSpeak, and Firebase Realtime Database to collect, process, store, and visualize real-time environmental data through an independent web dashboard.',
+    features: [
+      'Integrated ESP32 with DHT22, LDR, PIR, and ultrasonic sensors for real-time environmental monitoring',
+      'Implemented MQTT communication using HiveMQ Cloud for sensor data transmission',
+      'Developed Node-RED flows for data processing, automation, and cloud integration',
+      'Integrated ThingSpeak and Firebase Realtime Database for cloud-based sensor data storage',
+      'Implemented automated fan, lighting, and buzzer control based on sensor thresholds',
+      'Developed an independent web dashboard using Google AI Studio to display real-time Firebase data',
+      'Enabled remote monitoring of temperature, humidity, light intensity, motion, and distance'
+    ],
+    timeline: '2026',
+    github: '#',
+    liveDemo: 'https://praveen-smart-environmental-monitoring.ai.studio/',
+    image: null,
+    gallery: [],
+  },
+  {
     id: 'digital-alarm-clock',
     title: 'Digital Alarm Clock ',
     category: 'VLSI-INTERNSHIP',

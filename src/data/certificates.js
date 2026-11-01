@@ -18,6 +18,16 @@
 export const certificates = [
   {
     id: 'nptel-ml',
+    title: 'Introduction to Internet of Things 68%',
+    issuer: 'NPTEL',
+    credential: 'Completed',
+    date: '2026',
+    image: null,
+    link: '#',
+  },
+
+  {
+    id: 'nptel-ml',
     title: 'Introduction to Machine Learning ELITE 68%',
     issuer: 'NPTEL',
     credential: 'Completed',
@@ -37,6 +47,15 @@ export const certificates = [
   {
     id: 'design-thinking',
     title: 'Design Thinking',
+    issuer: 'Naan Mudhalvan',
+    credential: 'Completed',
+    date: '2025',
+    image: null,
+    link: '#',
+  },
+  {
+    id: 'design-thinking',
+    title: 'IoTApplication (ESP32)',
     issuer: 'Naan Mudhalvan',
     credential: 'Completed',
     date: '2025',
