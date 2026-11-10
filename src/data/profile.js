@@ -21,7 +21,7 @@ export const profile = {
     'Motivated Electronics and Communication Engineering student with a strong interest in VLSI design, IoT , Embedded Systems and Front End Development. Seeking opportunities to apply technical skills through internships or entry-level roles while continuously learning and contributing to innovative engineering solutions.',
 
   summary: [ 
-    'I work across two worlds that do not usually overlap: hardware-level systems like VLSI , IoT and Embedded design, and modern Frontend development. That combination shapes how I build -- I care about things working correctly at a low level, and looking and feeling premium at the surface.',
+    ' I work across two worlds that do not usually overlap: hardware-level systems like VLSI , IoT and Embedded design, and modern Frontend development. That combination shapes how I build -- I care about things working correctly at a low level, and looking and feeling premium at the surface.',
   ],
 
   stats: [
