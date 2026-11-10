@@ -20,6 +20,32 @@
 */
 
 export const internships = [
+  {
+  id: 'robotics-automation-ingage',
+  company: 'InGage Technologies - Chennai',
+  role: 'Robotics and Automation Intern',
+  period: '26 Oct 2026 — 30 Oct 2026',
+  focus: [
+    'Robotics and Automation',
+    'Embedded Systems',
+    'Sensor Interfacing',
+    'Microcontroller Programming',
+    'Motor Control',
+    '3D Printing'
+  ],
+  tools: [
+    'Arduino',
+    'ESP32',
+    '3D Printer'
+  ],
+  description: 'Completed a hands-on internship in Robotics and Automation, gaining practical experience in sensor interfacing, microcontroller-based robotic systems, motor control, wireless communication, and 3D printing. Explored how electronic hardware and embedded programming work together to develop automated robotic applications.',
+  highlights: [
+    
+    'Worked with Arduino and ESP32 microcontrollers for robotics applications.',
+    'Designed and implemented a Line & Light Following Robot using IR sensor light detection sensors.',
+    'Gained hands-on experience in 3D printer operation and prototype fabrication.'
+  ],
+},
 
   {
     id: 'nit-trichy-analog',
