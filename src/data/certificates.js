@@ -18,7 +18,7 @@
 export const certificates = [
   {
     id: 'nptel-ml',
-    title: 'Introduction to Internet of Things 68%',
+    title: 'Introduction to Internet of Things GOLD 90%',
     issuer: 'NPTEL',
     credential: 'Completed',
     date: '2026',
