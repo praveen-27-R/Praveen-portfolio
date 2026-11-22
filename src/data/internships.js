@@ -22,7 +22,7 @@
 export const internships = [
   {
   id: 'robotics-automation-ingage',
-  company: 'InGage Technologies - Chennai',
+  company: 'Robotics and Automation InGage Technologies - Chennai',
   role: 'Robotics and Automation Intern',
   period: '26 Oct 2026 — 30 Oct 2026',
   focus: [
@@ -49,7 +49,7 @@ export const internships = [
 
   {
     id: 'nit-trichy-analog',
-    company: 'VDART',
+    company: 'FULL STACK DEVELOPMENT VDART',
     role: 'OJT IN FULL STACK DEVELOPMENT',
     period: 'JUN 2026',
     focus: ['Frontend ', 'Backend', 'API calling'],
@@ -65,7 +65,7 @@ export const internships = [
 
   {
     id: 'nit-trichy-vlsi',
-    company: 'NIT Trichy',
+    company: 'Design and Analysis of Digital VLSI NIT Trichy',
     role: 'Internship in Design and Analysis of Digital VLSI',
     period: 'JAN 2026',
     focus: ['Digital VLSI', 'FPGA Design', 'Verilog HDL', 'Xilinx Vivado'],
@@ -80,7 +80,7 @@ export const internships = [
   },
   {
     id: 'nit-trichy-analog',
-    company: 'NIT Trichy',
+    company: 'Analog and Digital Circuit Design and Simulation  NIT Trichy',
     role: 'Internship in Analog and Digital Circuit Design and Simulation',
     period: 'Feb 2025',
     focus: ['Analog & Digital Circuits', 'Circuit Simulation', 'Proteus VSM'],
