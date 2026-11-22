@@ -80,7 +80,7 @@ export const internships = [
   },
   {
     id: 'nit-trichy-analog',
-    company: 'Analog and Digital Circuit Design and Simulation  NIT Trichy',
+    company: 'Analog and Digital Circuit Design and Simulation   NIT Trichy',
     role: 'Internship in Analog and Digital Circuit Design and Simulation',
     period: 'Feb 2025',
     focus: ['Analog & Digital Circuits', 'Circuit Simulation', 'Proteus VSM'],
