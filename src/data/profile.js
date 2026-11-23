@@ -31,7 +31,7 @@ export const profile = {
     { label: 'Certificates', value: '8' },
   ],
 
-  resumeUrl: './Praveen_RESUME.pdf',
+  resumeUrl: './Pravee_kumar_Resume.pdf',
 }
 
 export default profile
